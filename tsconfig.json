@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    // Určuje verzi JavaScriptu, do které se TypeScript kód přeloží. "es2016" znamená, že výsledný kód bude kompatibilní s ES2016.
+    "target": "es2016",
+
+    // Definuje modulový systém, který bude použit ve výsledném JavaScriptu. "commonjs" je standardní modulový systém používaný v Node.js.
+    "module": "commonjs",
+
+    // Určuje složku, kam se zkompilovaný JavaScript uloží. V tomto případě je to složka "dist".
+    "outDir": "./dist",
+
+    // Určuje kořenovou složku pro zdrojové TypeScript soubory. Zde je to složka "src".
+    "rootDir": "./src",
+
+    // Zajišťuje, že názvy souborů budou konzistentní v rámci projektu (např. rozlišování velkých a malých písmen).
+    "forceConsistentCasingInFileNames": true,
+
+    // Zapíná přísný režim TypeScriptu, který zahrnuje několik pravidel pro zvýšení bezpečnosti typů (např. kontrola null/undefined).
+    "strict": true,
+
+    // Zakazuje automatické mapování ES modulů na CommonJS moduly. Pokud je nastaveno na "false", je potřeba explicitně importovat moduly.
+    "esModuleInterop": false,
+
+    // Přeskakuje kontrolu typů v souborech deklarací (.d.ts), což může zrychlit kompilaci, ale může skrýt problémy s typy.
+    "skipLibCheck": true
+  }
+}
