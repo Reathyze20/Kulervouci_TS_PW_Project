@@ -1,7 +1,9 @@
 import { Page } from "@playwright/test";
-import BasePage from "./basePage";
+import { BasePage } from "./basePage";
+import { ILoginPageActions } from "../exercises/day5/day5";
+import { UserCredentials } from "../interfaces/data.interfaces";
 
-class LoginPage extends BasePage {
+export class LoginPage extends BasePage {
   constructor(page: Page) {
     super(page);
   }
@@ -16,7 +18,7 @@ class LoginPage extends BasePage {
     });
   }
 
-  login(username: string, password: string): void {
+  async login(username: string, password: string) {
     console.log(`Přihlašuji se jako ${username} s heslem ${password}`);
   }
 }
